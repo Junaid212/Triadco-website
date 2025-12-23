@@ -104,8 +104,8 @@ class Footer extends React.Component {
                                 </div>
                                 {/* USEFUL LINKS */}
                                 <div className="col-lg-3 col-md-6 col-sm-6 footer-col-3">
-                                    <div className="widget widget_services inline-links">
-                                        <h4 className="widget-title" id='widget'>Useful links</h4>
+                                    <div className="widget widget_services inline-links hide-mobile">
+                                        <h4 className="widget-title " id='widget'>Useful links</h4>
                                         <ul >
                                             <li><NavLink to={"/"} id='link'>ACCUEIL</NavLink></li>
                                             <li><NavLink to={"/about"} id='link'>À PROPOS DE NOUS</NavLink></li>
@@ -122,6 +122,11 @@ class Footer extends React.Component {
                                         }
                                         #widget{
                                         color:#75BF44;
+                                        }
+                                        @media(max-width:768px){
+                                        .hide-mobile{
+                                        display:none;
+                                        }
                                         }
                                         `}</style>
                                     </div>

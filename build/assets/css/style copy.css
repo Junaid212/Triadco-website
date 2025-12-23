@@ -1278,7 +1278,7 @@ ol.list-num-count>li:before {
 	width: 28px;
 	height: 28px;
 	line-height: 28px;
-	color: #75BF44 !;
+	color: #fff;
 	background: #1a1a1a;
 	font-weight: 500;
 	text-align: center;
@@ -7557,7 +7557,7 @@ input[type=radio]:checked+label:before {
 
 
 .widget_services ul li a {
-	color: #fcf8f8;
+	color: #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 400;		
@@ -16315,8 +16315,6 @@ background: #000;
 }
 
 
-
-
 .image-effect-one:hover .figcaption{
   transition-delay: 0s;
 }
@@ -17186,27 +17184,4 @@ color:#fff;
 }
 
 
-@media (min-width: 1024px) { 
-	#mainid {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-  @media (min-width: 768 ) { 
-	#mainid {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-  @media (min-width: 768 ) { 
-	#laptopId {
-	  display: none !important;
-	  display: block !important;
-	}
-  }
-
-
-
 .autor-post-tag-share .widget.widget_tag_cloud{margin-bottom: 20px;}
-
-

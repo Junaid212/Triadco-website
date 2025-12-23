@@ -72,7 +72,7 @@ class ClientsLogo extends React.Component {
                                             <div className="item" key={index}>
                                                 <div className="ow-client-logo">
                                                     <div className="client-logo client-logo-media">
-                                                    <NavLink to={"#"} ><img src={item.image} alt="" style={{height:'100%'}}/></NavLink></div>
+                                                    <NavLink to={"#"} ><img src={item.image} alt="" style={{height:'100%', border:'1px solid #D7F7D5'}}/></NavLink></div>
                                                 </div>
                                             </div>
                                         ))}
@@ -104,7 +104,7 @@ class ClientsLogo extends React.Component {
                                             <div className="item" key={index}>
                                                 <div className="ow-client-logo">
                                                     <div className="client-logo client-logo-media">
-                                                    <NavLink to={"#"} ><img src={item.image} alt="" style={{height:'100%'}}/></NavLink></div>
+                                                    <NavLink to={"#"} ><img src={item.image} alt="" style={{height:'100%',border:'1px solid #D7F7D5'}}/></NavLink></div>
                                                 </div>
                                             </div>
                                         ))}
