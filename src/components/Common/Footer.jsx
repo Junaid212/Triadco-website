@@ -17,7 +17,7 @@ class Footer extends React.Component {
         return (
             <>
                 {/* <footer className="site-footer footer-large  footer-dark	footer-wide"> */}
-                <footer className="site-footer footer-large  	footer-wide" style={{backgroundColor:'#999999'}}>
+                <footer className="site-footer footer-large  	footer-wide" style={{backgroundColor:'#000000', color:'#EDEDED'}}>
                     <div className="container call-to-action-wrap bg-no-repeat bg-center" style={{ backgroundImage: 'url('+bgimage+')' }}>
                         <div className="p-a30 bg-primary ">
                             <div className="row">
@@ -82,22 +82,22 @@ class Footer extends React.Component {
                                 {/* RESENT POST */}
                                 <div className="col-lg-3 col-md-6 col-sm-6">
                                     <div className="widget widget_address_outer">
-                                        <h4 className="widget-title">Côte d'Ivoire</h4>
+                                        <h4 className="widget-title" id='widget'>Côte d'Ivoire</h4>
                                         <ul className="widget_address">
                                             <li>Marcory Av. de Côte d’Ivoire, Abidjan,Côte d’Ivoire</li>
-                                            <li><a href="mailto:Info@triadci.com" style={{color:'#4a4a4a'}}>Info@triadci.com</a></li>
-                                            <li> <a href='tel: +225 27 21 56 63 32' style={{color:'#4a4a4a'}}>+225 27 21 56 63 32</a></li>
+                                            <li><a href="mailto:Info@triadci.com" style={{color:'#fff'}}>Info@triadci.com</a></li>
+                                            <li> <a href='tel: +225 27 21 56 63 32' style={{color:'#fff'}}>+225 27 21 56 63 32</a></li>
                                             {/* <li>(+298) 146-6543-480</li>     */}
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-6 col-sm-6">
                                     <div className="widget widget_address_outer">
-                                        <h4 className="widget-title">Mali</h4>
+                                        <h4 className="widget-title" id='widget'>Mali</h4>
                                         <ul className="widget_address">
                                             <li>Hamdallaye, commune IV, Bamako, Mali</li>
-                                            <li><a href="mailto:Info@triamedml.com" style={{color:'#4a4a4a'}}>Info@triamedml.com</a></li>
-                                            <li> <a href='tel: +223 93 91 00 00' style={{color:'#4a4a4a'}}>+223 93 91 00 00</a></li>
+                                            <li><a href="mailto:Info@triamedml.com" style={{color:'white'}}>Info@triamedml.com</a></li>
+                                            <li> <a href='tel: +223 93 91 00 00' style={{color:'white'}}>+223 93 91 00 00</a></li>
                                             {/* <li>(+298) 146-6543-480</li> */}
                                         </ul>
                                     </div>
@@ -105,14 +105,25 @@ class Footer extends React.Component {
                                 {/* USEFUL LINKS */}
                                 <div className="col-lg-3 col-md-6 col-sm-6 footer-col-3">
                                     <div className="widget widget_services inline-links">
-                                        <h4 className="widget-title">Useful links</h4>
-                                        <ul>
-                                            <li><NavLink to={"/"}>ACCUEIL</NavLink></li>
-                                            <li><NavLink to={"/about"}>À PROPOS DE NOUS</NavLink></li>
-                                            <li><NavLink to={"/certification"}>RÉALISATIONS ET CERTIFICATIONS</NavLink></li>
-                                            <li><NavLink to={"/services"}>PRODUITS</NavLink></li>
-                                            <li><NavLink to={"/contactus"}>NOUS CONTACTER</NavLink></li>
+                                        <h4 className="widget-title" id='widget'>Useful links</h4>
+                                        <ul >
+                                            <li><NavLink to={"/"} id='link'>ACCUEIL</NavLink></li>
+                                            <li><NavLink to={"/about"} id='link'>À PROPOS DE NOUS</NavLink></li>
+                                            <li><NavLink to={"/certification"} id='link'>RÉALISATIONS ET CERTIFICATIONS</NavLink></li>
+                                            <li><NavLink to={"/services"} id='link'>PRODUITS</NavLink></li>
+                                            <li><NavLink to={"/contactus"} id='link'>NOUS CONTACTER</NavLink></li>
                                         </ul>
+                                        <style>{`
+                                        #link{
+                                        color:white;
+                                        }
+                                        #link:hover{
+                                        color:#75BF44;
+                                        }
+                                        #widget{
+                                        color:#75BF44;
+                                        }
+                                        `}</style>
                                     </div>
                                 </div>
                                 {/* TAGS */}

@@ -7562,7 +7562,7 @@ input[type=radio]:checked+label:before {
 
 
 .widget_services ul li a {
-	color: #000;
+	color: #fffafa;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 400;		
@@ -7632,7 +7632,7 @@ input[type=radio]:checked+label:before {
 
 
 .site-footer .widget_services ul li a {
-	color: #1a1a1a;
+	color: #fcfafa !important;
 	font-size:14px;
 }
 
@@ -14604,7 +14604,7 @@ transition: all 0.5s linear;
   vertical-align: top;
   position: relative;
   border-radius: 50%;
-  -webkit-border-radius:50%;
+  -webkit-border-radius:0%;
   max-width: 60%;
 }
 
@@ -17197,3 +17197,11 @@ color:#fff;
 	max-width: 750px;
 	margin: 0px auto;
   }
+
+
+  #link{
+   color:white;
+ }
+ #link:hover{
+ color:#75BF44;
+ }

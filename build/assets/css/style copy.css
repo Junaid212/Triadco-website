@@ -7557,7 +7557,7 @@ input[type=radio]:checked+label:before {
 
 
 .widget_services ul li a {
-	color: #000;
+	color: #fcf8f8;
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	font-weight: 400;		
@@ -16313,6 +16313,8 @@ background: #000;
   transform: translateY(0);
   opacity: 1;
 }
+
+
 
 
 .image-effect-one:hover .figcaption{

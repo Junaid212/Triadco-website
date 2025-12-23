@@ -11,17 +11,17 @@ class Tabs extends React.Component {
         return (
             <>
                 {/* <Header /> */}
-                <div className="page-content">
+                <div className="page-content" >
                 {/* <Banner title="When it comes to your house, don’t mess with the rest, trust the best." pagename="Tabs" bgimage={bnrimg}/> */}
                    
                     {/* SECTION CONTENTG START */}
-                    <div className="section-full inner-page-padding">
-                        <div className="container">
+                    <div className="section-full">
+                        <div className="container" >
                             <div className="row">
                                 {/* <ShortcodesNav /> */}
                                 
                                 <div className="col-md-12 col-sm-8" style={{display:'flex',justifyContent:'center'}}>
-                                    <div className="section-content">
+                                    <div className="section-content" >
                                         {/* <div className="m-b50">
                                             <div className="section-head">
                                                 <div className="mt-separator-outer separator-left">
@@ -64,12 +64,57 @@ class Tabs extends React.Component {
                                             {/* TITLE END */}
                                             {/* TAB DEFAULT WITH NAV BG */}
                                             <div className="section-content">
-                                                <div className="mt-tabs bg-tabs">
-                                                    <ul className="nav nav-tabs" style={{display:'flex',justifyContent:'center'}}>
-                                                        <li className="active" ><a data-toggle="tab" href="#web-design-13" style={{fontWeight:'600'}}>MISSION</a></li>
-                                                        <li><a data-toggle="tab" href="#graphic-design-13" style={{fontWeight:'600'}}>VISION</a></li>
-                                                        <li><a data-toggle="tab" href="#developement-13" style={{fontWeight:'600'}}>VALEUR</a></li>
-                                                    </ul>
+                                                <div className=" bg-tabs">
+                                                    <ul
+  className="nav nav-tabs custom-tabs"
+  style={{ display: "flex", justifyContent: "center" }}
+>
+  <li className="active">
+    <a data-toggle="tab" href="#web-design-13">MISSION</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#graphic-design-13">VISION</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#developement-13">VALEUR</a>
+  </li>
+</ul>
+
+                                                   <style>{`
+/* Reset default bootstrap border */
+.nav-tabs {
+  border-bottom: none;
+}
+
+/* Normal tabs */
+.custom-tabs > li > a {
+  font-weight: 600;
+  color: #333;
+  padding: 12px 20px;
+  border-radius: 0px;
+  margin: 0 2px;
+  background: #f1f1f1;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+/* ACTIVE TAB */
+.custom-tabs > li.active > a,
+.custom-tabs > li.active > a:hover,
+.custom-tabs > li.active > a:focus {
+  background-color: #75BF44 !important; /* GREEN BG */
+  color: #ffffff !important;
+  border: none !important;
+}
+
+/* Hover (inactive tabs) */
+.custom-tabs > li > a:hover {
+  background-color: #75BF44;
+  color: #fff;
+}
+`}</style>
+
+
                                                     <div className="tab-content" >
                                                         <div id="web-design-13" className="tab-pane active"  >
                                                         {/* <img src={require('./../../images/allicons/target.png')}/> */}

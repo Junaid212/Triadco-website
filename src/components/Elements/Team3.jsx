@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const teamMembers = [
     {
-        image: require('./../../images/team/HASSAN.jpg'),
+        image: require('./../../images/team/1.webp'),
         membername: 'Hassan Damoush',
         position: 'Directeur Général',
         call:'(+225)078999969',
@@ -11,35 +11,35 @@ const teamMembers = [
     },
    
     {
-        image: require('./../../images/team/FAYAD.jpg'),
+        image: require('./../../images/team/2.webp'),
         membername: 'Ayoub Fayad',
         position: 'Directeur Commercial',
          call:'(+225)0758373333',
         email:'afayad@triadci.com'
     },
     {
-        image: require('./../../images/team/CARINE.jpg'),
+        image: require('./../../images/team/3.webp'),
         membername: 'Carine Sea',
         position: 'Community & Public Relation',
          call:'(+225)0104040452',
         email:': info@triadci.com'
     },
     {
-        image: require('./../../images/team/PATRICK.jpg'),
+        image: require('./../../images/team/4.webp'),
         membername: 'Patrick Koffi',
         position: 'Responsable Administratif & Relation Publique',
          call:'(+225)0104040451',
         email:'info@triadci.com'
     },
     {
-        image: require('./../../images/team/KOUAME.jpg'),
+        image: require('./../../images/team/5.webp'),
         membername: 'Kouame Yao Narcisse Yoanne',
         position: 'Gestionnaire De Stock',
          call:'(+225)0104040447',
         email:'info@triadci.com'
     },
     {
-        image: require('./../../images/team/VALERIE.jpg'),
+        image: require('./../../images/team/6.webp'),
         membername: 'Ouedraogo Valerie',
         position: 'Responsable De Vente',
          call:'(+225)0104040448',
@@ -90,6 +90,62 @@ class Team3 extends React.Component {
                                     </div>
                                 ))}
                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="section-full p-t20 p-b80 bg-white inner-page-padding">
+
+                    
+                    <div className="container">
+                    {/* <h3 className="font-weight-600" >Ils Nous<span style={{color:'#75BF44'}}> Font Confiance</span></h3> */}
+                    <h2 className="font-weight-600" style={{textAlign:'center'}}> 
+                    <span style={{color:'#75BF44'}}> PHARMACIES  </span></h2>
+                        <div className="section-content ">
+                            <div className="row">
+                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
+                                     {/* <h4>PHARMACIE DES LAGUNES </h4> */}
+                                     <div className="section-content">
+                                         
+                                            <div className="m-b0">
+                                                <ol className="list-num-count">
+                                                    <li>PHARMACIE DES LAGUNES</li>
+                                                </ol>
+                                                
+                                            </div>
+                                        </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
+                                
+                                <div className="m-b0">
+                                                <ol className="list-num-count">
+                                                    <li>PHARMACIE METROPOLE </li>
+                                                </ol>
+                                                
+                                            </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
+                                
+                                <div className="m-b0">
+                                                <ol className="list-num-count" >
+                                                    <li >PHARMACIE DU CANAL  </li>
+                                                </ol>
+                                                
+                                            </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
+                                <div className="m-b0">
+                                                <ol className="list-num-count">
+                                                    <li>PHARMACIE D'ABOBO  </li>
+                                                </ol>
+                                                
+                                            </div>
+                                </div>
+                                
+                               
+                                
+                              
+                              
                             </div>
                         </div>
                     </div>

@@ -68,101 +68,49 @@ class Partners extends React.Component {
                         <div className="section-content " id='laptopId'
                         style={{ display: window.innerWidth < 768 ? 'none' : 'block' }}>
                         <h2 className="font-weight-600" style={{textAlign:'center'}}>INSTITUTIONS <span style={{color:'#75BF44'}}> & ONG </span></h2>
-                            <div className="row">
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/1img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/5img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/3img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/4img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/2img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/6img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/folder1/7img.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                              
-                              
-                            </div>
+                            <div className="row about-row">
+  {[1,5,3,4,2,6,7].map((img, index) => (
+    <div className="col-lg-3 col-md-3 about-col" key={index}>
+      <div className="m-about">
+        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+          <div className="ow-img">
+            <img
+              src={require(`./../../images/folder1/${img}img.jpg`)}
+              alt=""
+              className="about-img"
+            />
+          </div>
+        </OwlCarousel>
+      </div>
+    </div>
+  ))}
+
+  <style>{`
+    /* GAP BETWEEN ROWS */
+    .about-col {
+      margin-bottom: 30px;
+    }
+
+    .ow-img {
+      overflow: hidden;
+      border-radius: 0px;
+    }
+
+    .about-img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #D7F7D5;
+      border-radius: 0px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .ow-img:hover .about-img {
+      transform: scale(0.95);
+    //   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+  `}</style>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -183,89 +131,92 @@ class Partners extends React.Component {
                     <h2 className="font-weight-600" style={{textAlign:'center'}}>CLINIQUES 
                     <span style={{color:'#75BF44'}}> MEDICALES  </span></h2>
                         <div className="section-content ">
-                            <div className="row">
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img1.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img2.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img3.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img4.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img5.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 ">
-                                    <div className="m-about ">
-                                        <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
-                                                {/* <div className="item" > */}
-                                                    <div className="ow-img">
-                                                 <img src={require('./../../images/floder2/img6.jpg')}  alt=""/>
-                                                    {/* </div> */}
-                                                </div>
-                                        
-                                        </OwlCarousel>
-                                        
-                                    </div>
-                                </div>
-                                
-                              
-                              
-                            </div>
+                            <div className="row about-row">
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img1.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img2.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img3.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img4.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img5.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+
+  <div className="col-lg-3 col-md-4 col-sm-6 about-col">
+    <div className="m-about">
+      <OwlCarousel className="owl-carousel about-us-carousel" {...options}>
+        <div className="ow-img">
+          <img
+            src={require('./../../images/floder2/img6.jpg')}
+            alt=""
+            className="about-img"
+          />
+        </div>
+      </OwlCarousel>
+    </div>
+  </div>
+</div>
+
                         </div>
                     </div>
                 </div>
@@ -278,62 +229,7 @@ class Partners extends React.Component {
 
 
 
-                <div className="section-full p-t20 p-b80 bg-white inner-page-padding">
-
-                    
-                    <div className="container">
-                    {/* <h3 className="font-weight-600" >Ils Nous<span style={{color:'#75BF44'}}> Font Confiance</span></h3> */}
-                    <h2 className="font-weight-600" style={{textAlign:'center'}}> 
-                    <span style={{color:'#75BF44'}}> PHARMACIES  </span></h2>
-                        <div className="section-content ">
-                            <div className="row">
-                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
-                                     {/* <h4>PHARMACIE DES LAGUNES </h4> */}
-                                     <div className="section-content">
-                                         
-                                            <div className="m-b0">
-                                                <ol className="list-num-count">
-                                                    <li>PHARMACIE DES LAGUNES</li>
-                                                </ol>
-                                                
-                                            </div>
-                                        </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
-                                
-                                <div className="m-b0">
-                                                <ol className="list-num-count">
-                                                    <li>PHARMACIE METROPOLE </li>
-                                                </ol>
-                                                
-                                            </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
-                                
-                                <div className="m-b0">
-                                                <ol className="list-num-count" >
-                                                    <li >PHARMACIE DU CANAL  </li>
-                                                </ol>
-                                                
-                                            </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 " style={{textAlign:'center'}}>
-                                <div className="m-b0">
-                                                <ol className="list-num-count">
-                                                    <li>PHARMACIE D'ABOBO  </li>
-                                                </ol>
-                                                
-                                            </div>
-                                </div>
-                                
-                               
-                                
-                              
-                              
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </>
         );
     }
