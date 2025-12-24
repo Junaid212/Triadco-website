@@ -299,8 +299,8 @@ nouveauCentres de radiologie</p>
                                     <div key={index} className={`${item.filter} masonry-item col-md-4 col-sm-6 m-b30`}>
                                         <div className="image-effect-one hover-shadow" style={{boxShadow:'rgba(0, 0, 0, 0.15) 0px 2px 8px'}}>
                                             <img src={item.image} alt="" />
-                                            <div className="figcaption">
-                                                <h4 style={{margin:'10px', color:'#75BF44'}}>{item.title}</h4>
+                                            <div className="figcaption" style={{backgroundColor:'#75BF44'}}>
+                                                <h4 style={{margin:'10px', color:'#FFF'}}>{item.title}</h4>
                                                 {/* <p>{item.category}</p> */}
                                            {/* <i className="link-plus bg-primary" /> */}
                                             </div>
